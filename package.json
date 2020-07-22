@@ -1,0 +1,17 @@
+{
+  "name": "parcel-sdk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "app-root-path": "^3.0.0",
+    "cryptr": "^4.0.2",
+    "ipfs-http-client": "^45.0.0",
+    "uuid": "^3.3.3"
+  }
+}
