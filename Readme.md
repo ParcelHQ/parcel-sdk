@@ -79,3 +79,11 @@ let signature = <Get signature from ethereum private key by signing a message>
 await parcel.cryptoUtils.decryptUsingPrivateKey(encryptedData, signature);
 
 ```
+
+## Get public key using signatures
+
+```js
+const parcel = require("parcel-sdk");
+
+let signature = <Get signature from ethereum private key by signing a message>
+parcel.cryptoUtils.getPublicKey(signature);
