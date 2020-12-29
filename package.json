@@ -1,6 +1,6 @@
 {
   "name": "parcel-sdk",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,7 @@
   "dependencies": {
     "app-root-path": "^3.0.0",
     "cryptr": "^4.0.2",
+    "eth-crypto": "^1.8.0",
     "ipfs-http-client": "^45.0.0",
     "uuid": "^3.3.3"
   }
