@@ -50,6 +50,27 @@ parcel.cryptoUtils.decryptData(<Encrypted String>,signature, safeAddress);
 
 ```
 
+## Encrypt Data using Encryption Key
+
+```js
+const parcel = require("parcel-sdk");
+
+let signature = <Get signature from ethereum private key by signing a message>
+parcel.cryptoUtils.encryptDataUsingEncryptionKey("some data",encryptionKey);
+
+```
+
+## Decrypt Data using Encryption Key
+
+```js
+const parcel = require("parcel-sdk");
+
+let signature = <Get signature from ethereum private key by signing a message>
+parcel.cryptoUtils.decryptDataUsingEncryptionKey(<Encrypted String>, encryptionKey);
+
+```
+
+
 ## Get Encryption Key using Ethereum Signatures
 
 ```js
@@ -66,17 +87,27 @@ parcel.cryptoUtils.getEncryptionKey(signature, safeAddress);
 const parcel = require("parcel-sdk");
 
 let signature = <Get signature from ethereum private key by signing a message>
-await parcel.cryptoUtils.encryptUsingPublicKey(data, signature);
+await parcel.cryptoUtils.encryptUsingPublicKey(data, publicKey);
 
 ```
 
-## Decrypt data using private key
+## Encrypt data using signatures
 
 ```js
 const parcel = require("parcel-sdk");
 
 let signature = <Get signature from ethereum private key by signing a message>
-await parcel.cryptoUtils.decryptUsingPrivateKey(encryptedData, signature);
+await parcel.cryptoUtils.encryptUsingSignatures(data, signature);
+
+```
+
+## Decrypt data using signatures
+
+```js
+const parcel = require("parcel-sdk");
+
+let signature = <Get signature from ethereum private key by signing a message>
+await parcel.cryptoUtils.decryptUsingSignatures(encryptedData, signature);
 
 ```
 
